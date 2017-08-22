@@ -18,12 +18,12 @@ BezierPath::BezierPath(QPointF p01, QPointF p02, StateDiagram * sd1, StateDiagra
 
     if (state1!=nullptr) {
         rect1=state1->sceneBoundingRect();
-        t1 = getPointFromRect1(0.0,0.5,rect1);
+        t1 = getPointFromRect1(0.0,1.0,rect1);
     }
 
     if (state2!=nullptr) {
         rect2=state2->sceneBoundingRect();
-        t2 = getPointFromRect2(0.5,1.0,rect2);
+        t2 = getPointFromRect2(0.0,1.0,rect2);
     }
 
 
